@@ -66,7 +66,7 @@ function Footer() {
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <p>&copy; {year} A2 Gold Ghee. All rights reserved.</p>
+          <p>&copy; {year} A2 Gold Ghee. All rights reserved. <strong>Developed by Gokulakrishnan</strong></p>
           <p className="footer__credit">Crafted with care, the traditional way.</p>
         </div>
       </div>
