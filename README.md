@@ -408,24 +408,6 @@ The project follows four main principles:
 
 ---
 
-# ⭐ Interview Highlights
-
-This project demonstrates:
-
-- React component architecture
-- Modern CSS
-- Responsive web development
-- GSAP animation development
-- ScrollTrigger
-- Framer Motion
-- Smooth scrolling with Lenis
-- UI/UX implementation
-- Accessibility
-- Performance awareness
-- Clean project organization
-- Production-oriented development
-
----
 
 ## 📄 License
 
