@@ -1,86 +1,546 @@
-# A2 Gold Ghee — Premium Landing Page
+# ✨ A2 Gold Ghee
 
-A fully responsive, animation-rich one-page landing website for a fictional
-luxury ghee brand, built as a Frontend Developer interview assignment.
+### Premium • Traditional • Pure • Modern
 
-## Tech Stack
+A premium, fully responsive one-page landing website for **A2 Gold Ghee**, created as a Frontend Developer interview assignment.
 
-- **React 18 + Vite** — component architecture & fast dev server
-- **Plain CSS** — CSS variables, Grid, Flexbox, `clamp()`, no framework
-- **GSAP + ScrollTrigger** — scroll-driven reveals, timelines, counters
-- **Framer Motion** — micro-interactions, hover/tap states, accordions
-- **Lenis** — buttery smooth scrolling synced with GSAP
-- **React Icons** — lightweight iconography (Heroicons, Game Icons, Font Awesome sets)
+The project combines **modern React architecture, premium UI/UX, smooth scrolling, GSAP animations, Framer Motion interactions, and responsive Plain CSS** to create a polished luxury food-brand experience.
 
-## Getting Started
+---
+
+## 🌐 Live Preview
+
+> Add your deployed website URL here.
+
+**Live Demo:** `https://a2-gold-ghee.vercel.app`
+
+---
+
+## 📸 Preview
+
+> Add your project screenshot here.
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                     A2 GOLD GHEE                             │
+│                                                             │
+│        Pure Tradition. Modern Luxury.                       │
+│                                                             │
+│              [ Explore Ghee ]                               │
+│                                                             │
+│                    🫙                                       │
+│               Premium Ghee                                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 🚀 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| ⚛️ React 18 | Component-based UI architecture |
+| ⚡ Vite | Fast development and production build |
+| 🎨 Plain CSS | Responsive styling and design system |
+| 🟢 GSAP | Advanced animations |
+| 📜 ScrollTrigger | Scroll-based animations |
+| 🎭 Framer Motion | Micro-interactions and UI animations |
+| 🌀 Lenis | Smooth scrolling |
+| 🔷 React Icons | UI icons |
+| 🖥️ JavaScript ES6+ | Application logic |
+
+### Design
+
+| Area | Technology |
+|------|------------|
+| Typography | Playfair Display + Poppins |
+| Layout | CSS Grid + Flexbox |
+| Responsive Design | CSS Media Queries |
+| Design Tokens | CSS Variables |
+| Animation | GSAP + Framer Motion |
+| Visual Style | Luxury / Editorial / Minimal |
+| Accessibility | Semantic HTML + Reduced Motion |
+
+---
+
+# 🧩 Architecture
+
+The application follows a modular component-based architecture.
+
+```mermaid
+flowchart TD
+
+    A[App.jsx] --> B[Navbar]
+    A --> C[Hero]
+    A --> D[About]
+    A --> E[Benefits]
+    A --> F[Process]
+    A --> G[Gallery]
+    A --> H[Testimonials]
+    A --> I[FAQ]
+    A --> J[CTA]
+    A --> K[Contact]
+    A --> L[Footer]
+
+    A --> M[Loader]
+    A --> N[Scroll Progress]
+    A --> O[Scroll To Top]
+
+    C --> P[GSAP Animations]
+    F --> P
+    G --> P
+
+    C --> Q[Framer Motion]
+    E --> Q
+    H --> Q
+    I --> Q
+
+    A --> R[Lenis Smooth Scroll]
+```
+
+---
+
+# 🎯 Project Flow
+
+The website is designed as a visual storytelling experience:
+
+```mermaid
+flowchart LR
+
+    A[Landing] --> B[Brand Story]
+    B --> C[Benefits]
+    C --> D[Bilona Process]
+    D --> E[Products]
+    E --> F[Testimonials]
+    F --> G[FAQ]
+    G --> H[CTA]
+    H --> I[Contact]
+```
+
+### User Journey
+
+**Discover → Understand → Trust → Explore → Purchase → Connect**
+
+---
+
+# ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🧭 Sticky Navbar | Navigation remains accessible while scrolling |
+| 📱 Responsive UI | Desktop, tablet and mobile optimized |
+| 🎬 Hero Animation | Premium entrance animation and product presentation |
+| 🌀 Smooth Scroll | Lenis-powered smooth scrolling |
+| 🎯 Scroll Animations | GSAP ScrollTrigger animations |
+| 🫙 Product Showcase | 250ml, 500ml and 1L products |
+| 🧈 Bilona Timeline | Animated traditional ghee-making process |
+| 💬 Testimonials | Customer review section |
+| ❓ FAQ | Animated accordion |
+| 📩 Contact Form | Frontend-only contact interaction |
+| 🔝 Scroll To Top | Floating back-to-top control |
+| 📊 Scroll Progress | Visual page progress indicator |
+| ⏳ Loader | Branded loading experience |
+| ♿ Reduced Motion | Respects user motion preferences |
+
+---
+
+# 🎨 Design System
+
+## Color Palette
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| 🟡 Primary Gold | `#D4AF37` | Brand / CTA / Highlights |
+| 🤍 Cream White | `#FFF9F2` | Main surfaces |
+| 🟤 Warm Beige | `#F5E9D8` | Secondary sections |
+| ⚫ Dark Charcoal | `#2B2B2B` | Typography |
+| 🟫 Soft Brown | `#8B6B4A` | Supporting elements |
+| 🟢 Natural Green | `#4F7A4A` | Organic accents |
+| ⬜ Background | `#FCFAF7` | Page background |
+
+### Typography
+
+```text
+Headings
+Playfair Display
+
+        ↓
+
+Elegant • Premium • Editorial
+
+
+Body
+Poppins
+
+        ↓
+
+Clean • Modern • Readable
+```
+
+---
+
+# 🧱 Project Structure
+
+```text
+A2-Gold-Ghee/
+│
+├── public/
+│   ├── favicon.png
+│   └── ...
+│
+├── src/
+│   │
+│   ├── components/
+│   │   │
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Navbar.css
+│   │   │
+│   │   ├── Hero/
+│   │   │   ├── Hero.jsx
+│   │   │   └── Hero.css
+│   │   │
+│   │   ├── About/
+│   │   ├── Benefits/
+│   │   ├── Process/
+│   │   ├── Gallery/
+│   │   ├── Testimonials/
+│   │   ├── FAQ/
+│   │   ├── CTA/
+│   │   ├── Contact/
+│   │   └── Footer/
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   └── icons/
+│   │
+│   ├── animations/
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+# 🎬 Animation Architecture
+
+Animations are divided according to their purpose.
+
+```mermaid
+flowchart TD
+
+    A[Animation System]
+
+    A --> B[GSAP]
+    A --> C[Framer Motion]
+    A --> D[Lenis]
+
+    B --> B1[ScrollTrigger]
+    B --> B2[Parallax]
+    B --> B3[Timeline]
+    B --> B4[Stagger]
+    B --> B5[Counter]
+
+    C --> C1[Hover]
+    C --> C2[Tap]
+    C --> C3[Cards]
+    C --> C4[Accordion]
+    C --> C5[Micro Interactions]
+
+    D --> D1[Smooth Scrolling]
+    D --> D2[Scroll Synchronization]
+```
+
+---
+
+# 📱 Responsive Strategy
+
+The website is designed using a mobile-first approach.
+
+```text
+                    Responsive Layout
+                           │
+             ┌─────────────┼─────────────┐
+             │             │             │
+          Desktop        Tablet        Mobile
+          1440px+       768px+         <480px
+             │             │             │
+             ▼             ▼             ▼
+          Multi-column   Reduced       Single-column
+          layouts        spacing        layouts
+```
+
+### Responsive Techniques
+
+- CSS Grid
+- Flexbox
+- Media Queries
+- `clamp()`
+- Fluid typography
+- Responsive images
+- Touch-friendly controls
+- Mobile navigation
+- No horizontal overflow
+
+---
+
+# 🧈 Traditional Bilona Process
+
+The process section presents the traditional production journey:
+
+```text
+        🐄
+     Indigenous Cow
+          │
+          ▼
+      🥛 Fresh Milk
+          │
+          ▼
+        Curd
+          │
+          ▼
+       Butter
+          │
+          ▼
+   Traditional Bilona
+      Churning
+          │
+          ▼
+     Slow Heating
+          │
+          ▼
+      🟡 Pure Ghee
+```
+
+Each stage is animated using **GSAP ScrollTrigger**.
+
+---
+
+# 🫙 Product Collection
+
+| Size | Positioning |
+|------|-------------|
+| 250ml | Everyday / Trial |
+| 500ml | Family Size |
+| 1L | Premium / Value |
+
+Each product card includes:
+
+- Product image
+- Product name
+- Description
+- Price
+- CTA
+- Hover animation
+- Image zoom
+- Golden glow
+
+---
+
+# 📂 Component Architecture
+
+Every major section is isolated into its own component.
+
+```text
+Navbar
+   ↓
+Hero
+   ↓
+About
+   ↓
+Benefits
+   ↓
+Process
+   ↓
+Gallery
+   ↓
+Testimonials
+   ↓
+FAQ
+   ↓
+CTA
+   ↓
+Contact
+   ↓
+Footer
+```
+
+This makes the application:
+
+- Easy to maintain
+- Easy to debug
+- Easy to scale
+- Easy to explain during an interview
+- Easy to modify independently
+
+---
+
+# ⚡ Performance
+
+The project focuses on:
+
+- Lightweight dependencies
+- Lazy-loaded images
+- Optimized animations
+- CSS-based effects where possible
+- Responsive images
+- Reduced-motion support
+- Minimal unnecessary re-renders
+- Vite production optimization
+
+---
+
+# ♿ Accessibility
+
+Accessibility considerations include:
+
+- Semantic HTML
+- Descriptive `alt` attributes
+- Keyboard-friendly controls
+- Accessible buttons
+- Proper heading hierarchy
+- Form labels
+- Visible focus states
+- Reduced-motion support
+- Responsive touch targets
+
+---
+
+# 🛠️ Getting Started
+
+## 1. Clone the repository
 
 ```bash
-# 1. Install dependencies
+git clone https://github.com/GokulakrishnanSivalingam/a2-gold-ghee.git
+```
+
+## 2. Navigate into the project
+
+```bash
+cd a2-gold-ghee
+```
+
+## 3. Install dependencies
+
+```bash
 npm install
+```
 
-# 2. Start the dev server
+## 4. Start development server
+
+```bash
 npm run dev
+```
 
-# 3. Build for production
+The application will run at:
+
+```text
+http://localhost:5173
+```
+
+## 5. Build for production
+
+```bash
 npm run build
+```
 
-# 4. Preview the production build
+## 6. Preview production build
+
+```bash
 npm run preview
 ```
 
-The dev server runs at `http://localhost:5173`.
+---
 
-## Project Structure
+# 📦 Production Build
 
-```
-src/
-  components/
-    Navbar/         Sticky glassmorphism nav with active-link tracking
-    Hero/            Full-screen hero: gradient aura, particles, counters
-    About/           Two-column brand story with a clip-path reveal
-    Benefits/        Six-card grid of product benefits
-    Process/         Animated Bilona-method timeline (7 steps)
-    Gallery/         Three-tier product showcase (250ml / 500ml / 1L)
-    Testimonials/    Customer review cards
-    FAQ/             Accordion built with Framer Motion height animation
-    CTA/             Full-width dark conversion band
-    Contact/         Front-end-only contact form with success state
-    Footer/          Site-wide footer
-    Loader/          Branded intro screen
-    ScrollProgress/  Top-of-page scroll progress hairline
-    ScrollTop/       Floating "back to top" button
-  assets/
-    images/          GheeJar.jsx — a hand-built SVG jar illustration
-  hooks/
-    useLenis.js      Initializes Lenis and syncs it with GSAP ScrollTrigger
-  App.jsx
-  main.jsx
-  index.css          Design tokens (colors, type scale, spacing) + resets
+```mermaid
+flowchart LR
+
+    A[Source Code] --> B[Vite Build]
+    B --> C[Production Bundle]
+    C --> D[Optimized Assets]
+    D --> E[Deployment]
 ```
 
-Every component follows a `Component.jsx` + `Component.css` pairing with
-scoped class names (BEM-influenced), so each piece can be explained and
-modified independently.
+---
 
-## Design Tokens
+# 🌍 Deployment
 
-| Token | Value |
-| --- | --- |
-| Primary Gold | `#D4AF37` |
-| Cream White | `#FFF9F2` |
-| Warm Beige | `#F5E9D8` |
-| Dark Charcoal | `#2B2B2B` |
-| Soft Brown | `#8B6B4A` |
-| Natural Green | `#4F7A4A` |
-| Background | `#FCFAF7` |
-| Headings | Playfair Display |
-| Body | Poppins |
+The project can be deployed to:
 
-## Notes
+- Vercel
+- Netlify
+- GitHub Pages
+- Any static hosting provider
 
-- No product photography was supplied, so the "jar" visual is a hand-built,
-  reusable SVG component (`GheeJar.jsx`) rather than a raster placeholder —
-  this keeps every viewport crisp and lets CSS/GSAP animate it directly.
-- The contact form is front-end only (no backend), per the assignment brief.
-- Reduced-motion preferences are respected globally via a media query in
-  `index.css`.
+---
+
+# 📝 Notes
+
+- This is a fictional brand created for a Frontend Developer interview assignment.
+- The contact form is frontend-only and does not connect to a backend.
+- Product information is demonstration content.
+- Animations are designed to enhance the experience without overwhelming the user.
+- The website respects `prefers-reduced-motion`.
+
+---
+
+# 👨‍💻 Development Philosophy
+
+The project follows four main principles:
+
+```text
+             A2 GOLD GHEE
+                   │
+       ┌───────────┼───────────┐
+       │           │           │
+      UI         CODE        UX
+       │           │           │
+   Premium      Clean      Intuitive
+   Design       React      Navigation
+       │           │           │
+       └───────────┼───────────┘
+                   │
+             RESPONSIVE
+                   │
+              EXPERIENCE
+```
+
+### Core Focus
+
+**Clean Code + Premium Design + Smooth Animation + Responsive UX**
+
+---
+
+# ⭐ Interview Highlights
+
+This project demonstrates:
+
+- React component architecture
+- Modern CSS
+- Responsive web development
+- GSAP animation development
+- ScrollTrigger
+- Framer Motion
+- Smooth scrolling with Lenis
+- UI/UX implementation
+- Accessibility
+- Performance awareness
+- Clean project organization
+- Production-oriented development
+
+---
+
+## 📄 License
+
+This project was created for educational and interview-assignment purposes.
+
+© 2026 A2 Gold Ghee. All rights reserved.
