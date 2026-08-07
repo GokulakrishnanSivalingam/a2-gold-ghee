@@ -18,8 +18,6 @@ The project combines **modern React architecture, premium UI/UX, smooth scrollin
 
 ## 📸 Preview
 
-## Preview
-
 <p align="center">
   <img src="./preview.png" alt="Ghee Brand Website Preview" width="100%">
 </p>
@@ -385,16 +383,6 @@ npm run preview
 
 ---
 
-
-# 📝 Notes
-
-- This is a fictional brand created for a Frontend Developer interview assignment.
-- The contact form is frontend-only and does not connect to a backend.
-- Product information is demonstration content.
-- Animations are designed to enhance the experience without overwhelming the user.
-- The website respects `prefers-reduced-motion`.
-
----
 
 # 👨‍💻 Development Philosophy
 
