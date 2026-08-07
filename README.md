@@ -18,21 +18,11 @@ The project combines **modern React architecture, premium UI/UX, smooth scrollin
 
 ## 📸 Preview
 
-> Add your project screenshot here.
+## Preview
 
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                     A2 GOLD GHEE                             │
-│                                                             │
-│        Pure Tradition. Modern Luxury.                       │
-│                                                             │
-│              [ Explore Ghee ]                               │
-│                                                             │
-│                    🫙                                       │
-│               Premium Ghee                                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="./preview.png" alt="Ghee Brand Website Preview" width="100%">
+</p>
 
 ---
 
