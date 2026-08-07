@@ -149,24 +149,6 @@ flowchart LR
 | 🟢 Natural Green | `#4F7A4A` | Organic accents |
 | ⬜ Background | `#FCFAF7` | Page background |
 
-### Typography
-
-```text
-Headings
-Playfair Display
-
-        ↓
-
-Elegant • Premium • Editorial
-
-
-Body
-Poppins
-
-        ↓
-
-Clean • Modern • Readable
-```
 
 ---
 
@@ -219,36 +201,6 @@ A2-Gold-Ghee/
 
 ---
 
-# 🎬 Animation Architecture
-
-Animations are divided according to their purpose.
-
-```mermaid
-flowchart TD
-
-    A[Animation System]
-
-    A --> B[GSAP]
-    A --> C[Framer Motion]
-    A --> D[Lenis]
-
-    B --> B1[ScrollTrigger]
-    B --> B2[Parallax]
-    B --> B3[Timeline]
-    B --> B4[Stagger]
-    B --> B5[Counter]
-
-    C --> C1[Hover]
-    C --> C2[Tap]
-    C --> C3[Cards]
-    C --> C4[Accordion]
-    C --> C5[Micro Interactions]
-
-    D --> D1[Smooth Scrolling]
-    D --> D2[Scroll Synchronization]
-```
-
----
 
 # 📱 Responsive Strategy
 
@@ -387,22 +339,6 @@ The project focuses on:
 
 ---
 
-# ♿ Accessibility
-
-Accessibility considerations include:
-
-- Semantic HTML
-- Descriptive `alt` attributes
-- Keyboard-friendly controls
-- Accessible buttons
-- Proper heading hierarchy
-- Form labels
-- Visible focus states
-- Reduced-motion support
-- Responsive touch targets
-
----
-
 # 🛠️ Getting Started
 
 ## 1. Clone the repository
@@ -449,29 +385,6 @@ npm run preview
 
 ---
 
-# 📦 Production Build
-
-```mermaid
-flowchart LR
-
-    A[Source Code] --> B[Vite Build]
-    B --> C[Production Bundle]
-    C --> D[Optimized Assets]
-    D --> E[Deployment]
-```
-
----
-
-# 🌍 Deployment
-
-The project can be deployed to:
-
-- Vercel
-- Netlify
-- GitHub Pages
-- Any static hosting provider
-
----
 
 # 📝 Notes
 
