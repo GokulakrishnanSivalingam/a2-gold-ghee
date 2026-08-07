@@ -14,9 +14,6 @@ The project combines **modern React architecture, premium UI/UX, smooth scrollin
 
 **Live Demo:** `https://a2-gold-ghee.vercel.app`
 
----
-
-## 📸 Preview
 
 <p align="center">
   <img src="./preview.png" alt="Ghee Brand Website Preview" width="100%">
