@@ -51,7 +51,7 @@ function Contact() {
             </li>
             <li>
               <HiOutlineLocationMarker />
-              <span>Nashik, Maharashtra, India</span>
+              <span>Villupuram, India</span>
             </li>
           </ul>
         </div>
