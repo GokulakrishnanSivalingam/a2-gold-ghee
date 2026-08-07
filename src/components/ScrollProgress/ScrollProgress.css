@@ -1,0 +1,21 @@
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 1001;
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease-luxe);
+}
+
+.scroll-progress.is-visible {
+  opacity: 1;
+}
+
+.scroll-progress__bar {
+  height: 100%;
+  width: 100%;
+  transform-origin: left center;
+  background: var(--gradient-gold);
+}
