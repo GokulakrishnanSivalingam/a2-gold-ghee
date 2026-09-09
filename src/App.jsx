@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import useLenis from './hooks/useLenis'
 
 import Loader from './components/Loader/Loader'
@@ -49,6 +50,7 @@ function App() {
       </main>
       <Footer />
       <ScrollTop />
+      <Analytics />
     </>
   )
 }
